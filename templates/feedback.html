@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='feedback.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <div class="title">Feedback Form</div>
+    <div class="user-details">
+        <div class="content">
+            <form action="/feedback/" method="POST">
+                <div class="input-box">
+                    <span class="details">FIRST NAME</span>
+                    <input type="text" name="firstname" placeholder="Enter your First Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">LAST NAME</span>
+                    <input type="text" name="lastname" placeholder="Enter your Last Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">EMAIL</span>
+                    <input type="text" name="email" placeholder="Enter your email used for Registration" required>
+                </div>
+                <div class="session">
+                    <input type="radio" name="session" id="dot-1" value="dot-1">
+                    <input type="radio" name="session" id="dot-2" value="dot-2">
+                    <input type="radio" name="session" id="dot-3" value="dot-3">
+                    <span class="details">Overall, how satisfied are you with our event?</span>
+                    <div class="category">
+                        <div class="radio">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="session">Very satisfied</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="session">Satisfied</span>
+                            </label>
+                            <label for="dot-3">
+                                <span class="dot three"></span>
+                                <span class="session">Neutral</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" name="phonenumber" placeholder="Enter your number" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">What do you like most about our product/service?</span>
+                    <input type="text" name="review" placeholder="Enter your feedback here" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">What areas do you think need improvement in our product/service</span>
+                    <input type="text" name="areaofimprovement" placeholder="Enter your feedback here" required>
+                </div>
+                <div class="spacetext">
+                    <div class="button">
+                        <input type="submit" value="Submit your feedback">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+

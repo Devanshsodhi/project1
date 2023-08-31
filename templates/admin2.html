@@ -1,0 +1,126 @@
+
+<html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Create an Event </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin2.css') }}">
+     <meta name="EVENT" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+<div class="container">
+
+    <div class="title"> Create an Event</div>
+
+    <div class="user-details">
+    <div class="content">
+
+      <form action="#">
+        <br>
+        <div class="input-box">
+          <span class="details">Event Name</span>
+          <input type="text" placeholder="Name of Event" required>
+        </div>
+        <br>
+        <div class="image-pick">
+            <span class="details">Event Banner</span><br>
+            <input type="file" accept="image/*"> 
+
+        </div>
+        <br>
+        <div class="input-box">
+            <span class="details">Event Date and Time</span>
+            <input type="datetime-local"  required>
+        </div>
+        <br>
+        <div class="dropdown">
+            <span class="details">Venue</span>
+            <select name="venues">
+                <optgroup label="UAE">
+                    <option value="dubai">Dubai</option>
+                    <option value="abudhabi">Abu Dhabi</option>
+                    
+                </optgroup>
+                <optgroup label="India">
+                    <option value="delhi">Delhi</option>
+                    <option value="mumbai">Mumbai</option>
+                    
+                </optgroup>
+            </select>
+        </div>
+        <br>
+        <div class="dropdown">
+            <span class="details">Add Presenters from List</span>
+            
+            <select name="presenters" multiple>
+                <option>Peter</option>
+                <option>Joe</option>
+                <option>Cleveland</option>
+                <option>Glenn</option>
+                <option>Brian</option>
+                <option>Stewart</option>
+            </select>
+            <br>
+            (to choose multiple presenters, hold Ctrl)
+            <br>
+            
+        </div>
+        <br>
+        <div class="dropdown">
+            <span class="details">Add Sponsors</span>
+            
+            <select name="presenters" multiple>
+                <option>Company A</option>
+                <option>Company B</option>
+                <option>Company C</option>
+                <option>Company D</option>
+                <option>Company E</option>
+                <option>Company F</option>
+            </select>
+            <br>
+            (to choose multiple sponsors, hold Ctrl)
+            <br>
+            
+        </div>
+        <br>
+        <div class="input-box">
+            <span class="details">Agenda</span>
+            <textarea rows="7" placeholder="What is the event going to be about?" required></textarea>
+        </div>
+        <br>
+        
+        <div class="image-pick">
+            <span class="details">Pre-event Material</span><br>
+            <input type="file"  multiple> 
+
+        </div>
+        <br>
+        
+        <div class="image-pick">
+            <span class="details">Post-event Material</span><br>
+            <input type="file"  multiple> 
+
+        </div>
+        <br>
+
+
+
+        <div class="button">
+          <input type="submit" value="Schedule Event">
+        </div>
+        
+      
+      </form>
+
+    </div>
+    </div>
+      
+          
+        
+  
+</div>
+  
+
+</body>
+</html>

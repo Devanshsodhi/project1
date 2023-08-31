@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='navig.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Navigation Page</h1>
+        <div class="buttons">
+            <input type="button" value="REGISTER HERE" onclick="window.location.href='http://127.0.0.1:5000/registration/'" class="nav-button">
+            <input type="button" value="SUBMIT FEEDBACK" onclick="window.location.href='http://127.0.0.1:5000/feedback/'" class="nav-button">
+            <input type="button" value="ADMIN" onclick="window.location.href='http://127.0.0.1:5000/admin/'" class="nav-button">
+        </div>
+    </div>
+</body>
+</html>
